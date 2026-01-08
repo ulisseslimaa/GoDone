@@ -1,0 +1,58 @@
+{
+  "tarefas": [
+    {
+      "id": "a1b2",
+      "titulo": "Estudar JavaScript",
+      "descricao": "Revisar conceitos de manipulação de DOM e consumo de API",
+      "prioridade": "alta",
+      "dataVencimento": "2026-01-15",
+      "dataCriacao": "2026-01-08",
+      "status": "pendente"
+    },
+    {
+      "id": "c3d4",
+      "titulo": "Implementar projeto GoDone",
+      "descricao": "Desenvolver lista de tarefas com CRUD completo",
+      "prioridade": "alta",
+      "dataVencimento": "2026-01-20",
+      "dataCriacao": "2026-01-08",
+      "status": "concluido"
+    },
+    {
+      "id": "e5f6",
+      "titulo": "Testar API",
+      "descricao": "Validar todas as operações CRUD com axios",
+      "prioridade": "media",
+      "dataVencimento": "2026-01-18",
+      "dataCriacao": "2026-01-07",
+      "status": "pendente"
+    },
+    {
+      "id": "7a8b",
+      "titulo": "Documentar código",
+      "descricao": "Adicionar comentários e documentação no projeto",
+      "prioridade": "baixa",
+      "dataVencimento": "2026-01-25",
+      "dataCriacao": "2026-01-05",
+      "status": "pendente"
+    },
+    {
+      "id": "9c0d",
+      "titulo": "Estudar matemática",
+      "descricao": "Revisar cálculo e álgebra linear",
+      "prioridade": "alta",
+      "dataVencimento": "2026-01-12",
+      "dataCriacao": "2026-01-08",
+      "status": "pendente"
+    },
+    {
+      "id": "1e2f",
+      "titulo": "Fazer exercícios físicos",
+      "descricao": "Treino de 30 minutos pela manhã",
+      "prioridade": "media",
+      "dataVencimento": "2026-01-10",
+      "dataCriacao": "2026-01-06",
+      "status": "concluido"
+    }
+  ]
+}
