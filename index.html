@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoDone - Lista de Tarefas Avançada</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/ui.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="conteudo-cabecalho">
+      <div class="logo">
+        <img src="assets/icons/logo.svg" alt="GoDone Logo" class="logo-icon" />
+        <h1>GoDone</h1>
+      </div>
+      <p>Sua lista de tarefas inteligente</p>
+    </div>
+  </header>
+  <main class="background-overlay">
+    <div class="overlay"></div>
+    <div class="overlay overlay-color"></div>
+    <h2>Adicione uma nova tarefa</h2>
+    <section id="form-container">
+      <form id="tarefa-form">
+        <input type="hidden" id="tarefa-id" />
+        
+        <label for="tarefa-titulo">Título</label>
+        <input type="text" id="tarefa-titulo" placeholder="Título da tarefa" required />
+
+        <label for="tarefa-descricao">Descrição</label>
+        <textarea id="tarefa-descricao" placeholder="Descreva a tarefa" required></textarea>
+
+        <div class="form-row">
+          <div>
+            <label for="tarefa-prioridade">Prioridade</label>
+            <select id="tarefa-prioridade" required>
+              <option value="">Selecione...</option>
+              <option value="baixa">Baixa</option>
+              <option value="media">Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="tarefa-vencimento">Data de Vencimento</label>
+            <input type="date" id="tarefa-vencimento" required>
+          </div>
+        </div>
+
+        <div class="form-botoes">
+          <button type="submit" id="botao-salvar">Adicionar Tarefa</button>
+          <button type="button" id="botao-cancelar">Cancelar</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="tarefas-container">
+      <h3>Minhas Tarefas</h3>
+
+      <section id="controles-container">
+        <input type="text" id="campo-busca" placeholder="Buscar por título..." />
+        
+        <div id="filtros-container">
+          <select id="filtro-status">
+            <option value="">Todos os Status</option>
+            <option value="pendente">Pendente</option>
+            <option value="concluido">Concluído</option>
+          </select>
+
+          <select id="filtro-prioridade">
+            <option value="">Todas as Prioridades</option>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+          </select>
+
+          <select id="ordenar-por">
+            <option value="data-criacao">Mais Recentes</option>
+            <option value="data-vencimento">Data de Vencimento</option>
+            <option value="prioridade">Prioridade</option>
+          </select>
+        </div>
+      </section>
+
+      <ul id="lista-tarefas"></ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;
+      2026 Desenvolvido por Ulisses Limaa.
+      Projeto fictício sem fins comerciais.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+</body>
+
+</html>
